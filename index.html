@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corporate Portfolio</title>
+  <title>Tanvi Mohite</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <style>
@@ -60,11 +60,11 @@
       color: #818cf8;
       font-weight: 900;
       letter-spacing: -1px;
-      transition: all 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       position: relative;
       display: inline-block;
       padding-bottom: 4px;
-      font-size: 38px !important;
+      font-size: 38px;
     }
 
     .name-brand:hover {
@@ -92,18 +92,15 @@
     }
 
     .nav-container .name-brand {
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       position: relative;
-      left: 0;
-      transform: scale(1);
+      transform: translateX(0);
     }
 
-    /* Desktop only: Glide animation with scale */
+    /* Desktop only: Glide animation to left */
     @media (min-width: 768px) {
       .nav-container.scrolled .name-brand {
-        left: -350px;
-        transform: scale(0.6);
-        font-size: 36px !important;
+        transform: translateX(-420px);
+        font-size: 34px;
       }
     }
 
@@ -111,8 +108,7 @@
     @media (max-width: 767px) {
       .nav-container.scrolled .name-brand {
         left: 0;
-        transform: scale(1);
-        font-size: 40px !important;
+        font-size: 38px;
       }
     }
   </style>
@@ -248,5 +244,5 @@
       }
     });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e26739f1634a7f1',t:'MTc3NDUzMTIxNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e268b480107a7f1',t:'MTc3NDUzMjE4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
