@@ -61,11 +61,12 @@
   <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
  </head>
  <body>
-  <div id="app" class="w-full h-full overflow-auto"><!-- Navigation -->
+  <div id="app" class="w-full h-full overflow-auto">
+   <!-- Navigation -->
    <nav class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-     <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="text-2xl font-bold text-slate-900 hover:text-indigo-600 transition cursor-pointer"> Tanvi Mohite </a>
-     <div class="hidden md:flex gap-8"><a href="#about" class="text-gray-700 hover:text-slate-900 transition">About</a> <a href="#work" class="text-gray-700 hover:text-slate-900 transition">Work</a> <a href="#contact" class="text-gray-700 hover:text-slate-900 transition">Contact</a>
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"><button onclick="document.getElementById('app').scrollTo({top: 0, behavior: 'smooth'});" class="text-2xl font-bold text-slate-900 hover:text-indigo-600 transition cursor-pointer bg-none border-none"> Tanvi Mohite </button>
+     <div class="hidden md:flex gap-8">
+      <a href="#about" class="text-gray-700 hover:text-slate-900 transition">About</a> <a href="#work" class="text-gray-700 hover:text-slate-900 transition">Work</a> <a href="#contact" class="text-gray-700 hover:text-slate-900 transition">Contact</a>
      </div>
     </div>
    </nav><!-- Hero Section -->
@@ -99,13 +100,15 @@
    <section id="work" class="py-20 px-6 bg-slate-50">
     <div class="max-w-6xl mx-auto">
      <h2 class="text-4xl font-bold mb-12 text-slate-900">Selected Work</h2>
-     <div class="grid md:grid-cols-2 gap-8"><!-- Project 1 -->
+     <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
       <div class="project-card rounded-lg overflow-hidden">
        <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
        <div class="p-6">
         <h3 class="text-xl font-bold text-slate-900 mb-2">Smart Cow Shed Automation</h3>
         <p class="text-gray-600 mb-4">Designed an IoT-based automated cow shed system using NodeMCU ESP8266, integrating DHT11 sensors for temperature and humidity monitoring. Implemented relay-controlled water pump, fan, LDR-based auto lighting, and conveyor belt feeding. Remote monitoring via ThingSpeak/Blynk with automated control of five daily farm tasks.</p>
-        <div class="flex gap-2"><span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Automation</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Agriculture</span>
+        <div class="flex gap-2">
+         <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Automation</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Agriculture</span>
         </div>
        </div>
       </div><!-- Project 2 -->
@@ -114,7 +117,8 @@
        <div class="p-6">
         <h3 class="text-xl font-bold text-slate-900 mb-2">AI-Based Digital Stethoscope</h3>
         <p class="text-gray-600 mb-4">Developed a portable health monitoring device using Raspberry Pi Pico W with MAX9814 microphone amplifier, MAX30102 pulse oximeter, and DS18B20 temperature sensor. Features SSD1306 OLED display for real-time vital signs. Powered by 18650 Li-ion battery with TP4056 charging module — an affordable all-in-one monitor for healthcare settings.</p>
-        <div class="flex gap-2"><span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Healthcare</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Sensors</span>
+        <div class="flex gap-2">
+         <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Healthcare</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Sensors</span>
         </div>
        </div>
       </div><!-- Project 3 -->
@@ -123,7 +127,8 @@
        <div class="p-6">
         <h3 class="text-xl font-bold text-slate-900 mb-2">Smart Iron Box</h3>
         <p class="text-gray-600 mb-4">Retrofitted a household iron with Arduino Nano and 4 MG90S servo motors (2 on each side near heating plate) for motion-based idle-detection. When stationary, servos automatically lift the iron off the surface — a fully switch-free safety mechanism preventing burns and fire hazards.</p>
-        <div class="flex gap-2"><span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Arduino</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Safety Systems</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span>
+        <div class="flex gap-2">
+         <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Arduino</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Safety Systems</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span>
         </div>
        </div>
       </div><!-- Project 4 -->
@@ -132,7 +137,8 @@
        <div class="p-6">
         <h3 class="text-xl font-bold text-slate-900 mb-2">PCB Assembly &amp; Manufacturing Training</h3>
         <p class="text-gray-600 mb-4">Completed short-term training at Universal Power Control Pvt. Ltd. (Dec 2024). Gained hands-on experience in PCB assembly including component mounting and soldering per guidelines. Assisted in transformer core assembly with E-I lamination insertion and basic circuit testing in a live manufacturing environment.</p>
-        <div class="flex gap-2"><span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">PCB Assembly</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Manufacturing</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Hardware</span>
+        <div class="flex gap-2">
+         <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">PCB Assembly</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Manufacturing</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Hardware</span>
         </div>
        </div>
       </div>
@@ -143,7 +149,8 @@
     <div class="max-w-6xl mx-auto text-center">
      <h2 class="text-4xl font-bold mb-6 text-slate-900">Let's Connect</h2>
      <p class="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">Open to collaborations, internships, and project opportunities. Feel free to reach out via email or connect with me on LinkedIn to discuss IoT solutions, embedded systems, and smart automation technology.</p>
-     <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="mailto:tanvimohite04@gmail.com" class="cta-button px-8 py-4 rounded-lg font-semibold inline-block">📧 Email</a> <a href="https://linkedin.com/in/tanvi-mohite-378a6b22b" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-lg font-semibold border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition"> LinkedIn </a>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:tanvimohite04@gmail.com" class="cta-button px-8 py-4 rounded-lg font-semibold inline-block">📧 Email</a> <a href="https://linkedin.com/in/tanvi-mohite-378a6b22b" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-lg font-semibold border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition"> LinkedIn </a>
      </div>
     </div>
    </section><!-- Footer -->
@@ -156,5 +163,5 @@
   <script>
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e261f40377da7f1',t:'MTc3NDUyNzc1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e262221725ba7f1',t:'MTc3NDUyNzg3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
