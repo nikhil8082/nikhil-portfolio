@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanvi Mohite</title>
+  <title>Corporate Portfolio</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <style>
@@ -102,11 +102,11 @@
     @keyframes glideLeft {
       from {
         transform: translateX(0);
-        
+        font-size: 38px;
       }
       to {
         transform: translateX(-450px);
-        font-size: 28px;
+        font-size: 30px;
       }
     }
   </style>
@@ -118,7 +118,7 @@
   <div id="app" class="w-full h-full overflow-auto"><!-- Navigation -->
    <nav class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
     <div class="nav-container max-w-6xl mx-auto px-6 py-4 flex justify-center items-center"><button onclick="document.getElementById('app').scrollTo({top: 0, behavior: 'smooth'});" class="name-brand text-2xl hover:text-indigo-600 transition cursor-pointer bg-none border-none"> Tanvi Mohite </button>
-     <div class="hidden md:flex gap-8 absolute right-6"><a href="#about" class="text-gray-700 hover:text-slate-900 transition">About</a> <a href="#work" class="text-gray-700 hover:text-slate-900 transition">Projects</a> <a href="#contact" class="text-gray-700 hover:text-slate-900 transition">Contact</a>
+     <div class="hidden md:flex gap-8 absolute right-6"><a href="#about" class="text-gray-700 hover:text-slate-900 transition">About</a> <a href="#experience" class="text-gray-700 hover:text-slate-900 transition">Experience</a> <a href="#work" class="text-gray-700 hover:text-slate-900 transition">Projects</a> <a href="#contact" class="text-gray-700 hover:text-slate-900 transition">Contact</a>
      </div>
     </div>
    </nav><!-- Hero Section -->
@@ -153,7 +153,26 @@
       </div>
      </div>
     </div>
-   </section><!-- Work Section -->
+   </section><!-- Work Experience Section -->
+   <section id="experience" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold mb-12 text-slate-900">Work Experience</h2>
+     <div class="project-card rounded-lg overflow-hidden">
+      <div class="h-48 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center relative overflow-hidden">
+       <img src="https://ecelectronics.com/wp-content/uploads/2025/05/shutterstock_2137865295-1-scaled-1.jpg" alt="PCB Assembly &amp; Manufacturing Internship" loading="lazy" class="w-full h-full object-cover opacity-90" onerror="console.error('Image failed to load:', this.src); this.style.display='none'; this.parentElement.querySelector('svg').style.display='flex';">
+       <svg class="w-24 h-24 text-white opacity-80 absolute" style="display:none;" fill="currentColor" viewbox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+       </svg>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold text-slate-900 mb-2">PCB Assembly &amp; Manufacturing Internship</h3>
+       <p class="text-gray-700 mb-2 font-semibold">Universal Power Control Pvt. Ltd. • December 2024</p>
+       <p class="text-gray-600 mb-4">Gained hands-on experience in PCB assembly including component mounting and soldering per manufacturing guidelines. Assisted in transformer core assembly with E-I lamination insertion and performed basic circuit testing in a live manufacturing environment.</p>
+       <div class="flex gap-2"><span class="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded">PCB Assembly</span> <span class="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded">Manufacturing</span> <span class="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded">Hardware</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Projects Section -->
    <section id="work" class="py-20 px-6 bg-slate-50">
     <div class="max-w-6xl mx-auto">
      <h2 class="text-4xl font-bold mb-12 text-slate-900">Projects</h2>
@@ -196,19 +215,6 @@
         <div class="flex gap-2"><span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Arduino</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Safety Systems</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">IoT</span>
         </div>
        </div>
-      </div><!-- Project 4 -->
-      <div class="project-card rounded-lg overflow-hidden">
-       <div class="h-48 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center relative overflow-hidden">
-        <img src="https://ecelectronics.com/wp-content/uploads/2025/05/shutterstock_2137865295-1-scaled-1.jpg" alt="PCB Assembly &amp; Manufacturing Training" loading="lazy" class="w-full h-full object-cover opacity-90" onerror="console.error('Image failed to load:', this.src); this.style.display='none'; this.parentElement.querySelector('svg').style.display='flex';">
-        <svg class="w-24 h-24 text-white opacity-80 absolute" style="display:none;" fill="currentColor" viewbox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
-        </svg>
-       </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold text-slate-900 mb-2">PCB Assembly &amp; Manufacturing Training</h3>
-        <p class="text-gray-600 mb-4">Completed short-term training at Universal Power Control Pvt. Ltd. (Dec 2024). Gained hands-on experience in PCB assembly including component mounting and soldering per guidelines. Assisted in transformer core assembly with E-I lamination insertion and basic circuit testing in a live manufacturing environment.</p>
-        <div class="flex gap-2"><span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">PCB Assembly</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Manufacturing</span> <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1 rounded">Hardware</span>
-        </div>
-       </div>
       </div>
      </div>
     </div>
@@ -243,5 +249,5 @@
       }
     });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e26af76d79fa7f1',t:'MTc3NDUzMzY2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e3c1382d754a6ed',t:'MTc3NDc1Nzk2NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
